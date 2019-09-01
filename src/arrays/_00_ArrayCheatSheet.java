@@ -18,7 +18,8 @@ public class _00_ArrayCheatSheet {
 		//2. print the third element in the array
 		
 		//3. set the third element to a different value'
-	    
+	    names[2]="slkjdf";
+	    System.out.println(names[2]);
 	    
 	    
 		
