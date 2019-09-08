@@ -39,8 +39,8 @@ void draw() {
 
   //8. draw a rectangle for each int in your array.
  for(int i=0; i<width; i++){
-   rect(array[i],height,1,-1*array[i]); 
- }//stuck
+   rect(i,height,1,-1*array[i]); 
+ }
   //   the x value will be the current index in the array
   //   the y value will the height variable
   //   the width is 1 (one)
@@ -50,6 +50,10 @@ void draw() {
   //9. call the stepSort method
 stepSort(array);  
 
+
+if(mousePressed==true){
+  method(array);
+}
   //10. extract the code that randomizes the array into a method.
 
   //11. call the method you made in step 10 when the mouse is pressed
@@ -65,7 +69,13 @@ void stepSort(int[] arr) {
     }
   }
 }
-void method(){
+void method(int[] arr){
+   
   //randomize array
+   for(int i=0; i<width; i++){
+  array[i]=(int)random(0,height);
+  
+  }
+  
   
 }
